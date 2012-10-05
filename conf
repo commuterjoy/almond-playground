@@ -1,0 +1,22 @@
+{
+    "baseUrl": ".",
+    "appDir": "./javascripts",
+    "dir": "./tmp",
+    "paths": {
+        "domReady": "vendor/domReady-2.0.1",
+        "bean": "vendor/bean-0.4.11-1",
+        "EventEmitter": "vendor/EventEmitter-3.1.5",
+        "reqwest": "vendor/reqwest-0.4.5",
+        "bonzo": "vendor/bonzo-1.2.1",
+        "qwery": "vendor/qwery-3.3.11"
+    },
+    "optimize": "none",
+    "modules": [
+        {
+            "name": "bootstraps/article"
+        },
+        {
+            "name": "bootstraps/predomready"
+        }
+    ]
+}
