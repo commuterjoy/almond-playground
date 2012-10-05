@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <script>
+        // predomreadybootstrap.begin
+            PREDOMREADYBOOTSTRAP
+        // predomreadybootstrap.end
+
+        var script = document.createElement('script');
+        script.async = 'async';
+        script.src = 'article.js';
+        script.onload = function() {
+            
+            // ...                                    
+            define('config', function() {
+                return { 
+                    page: { pageId: 'foo' }
+                }
+            });
+
+            require(['config', 'bootstraps/article'], function(a, b) {
+                console.log(a, b);
+                b.go(a, { isModernBrowser: true });
+                });
+            };
+
+            document.getElementsByTagName("head")[0].appendChild(script); 
+    </script>
+    </head>
+
+    <div id="sections-footer">sections-footer</div>
+    <div id="sections-control">sections-control</div>
+    <div id="sections-control-header">sections-control</div>
+    <div id="sections-control-footer">sections-control</div>
+    <div id="topstories-control-header">a</div>
+    <div id="topstories-control-footer">t</div>
+    
+    <style>
+    div { border: 1px solid black; }
+    .initially-off { border: 1px solid red; }  
+    </style>
+</html>

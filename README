@@ -14,3 +14,8 @@ Why?
 - ... and defers all the dom-dependent stuff to later (as it currently is)
 - We use a simple AMD loader designed for AMD modules that have been compiled (Almond is 1kb)
 
+Problems
+--------
+
+- The shared modules (Eg, common) appear in both the almond and article bootstraps
+
